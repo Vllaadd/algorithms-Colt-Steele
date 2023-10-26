@@ -1,5 +1,11 @@
-// two arrays NUMS and VAL 
-// K are elements of NUMS that are not equal to VAL 
-//return K
-//the remaining elements of nums that are equal to k are not important 
+function removeElement(nums, val){
+    let k = 0;
 
+    for(let i=0; i<nums.length; i++){
+        if(nums[i] != val){
+        nums[k] = nums[i];
+        k++;
+    }
+}
+return k
+}
