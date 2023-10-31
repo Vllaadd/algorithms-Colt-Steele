@@ -9,3 +9,7 @@ function removeElement(nums, val){
 }
 return k
 }
+
+const result = removeElement(nums, val);
+console.log(nums.slice(0, result)); 
+console.log(result); 
