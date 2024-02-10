@@ -15,3 +15,12 @@
 - for ... of loop 
 `for(var char of str)` 
 
+# Frequently Used Patterns 
+1. **Frequency Counter**
+2. **Multiple Pointers**
+3. **Sliding Window**
+4. **Devide and Conquer**
+5. **Dynamic Programming**
+6. ***Greedy Algorithms**
+7. **Backtracking**
+
