@@ -15,6 +15,13 @@
 - **for ... of loop**: 
 `for(var char of str)` 
 
+# Same 
+1. **splice method**
+- `array.splice(startIndex, deleteCount, item1, item2 ...);`
+`startIndex` shows us from what index number we are starting the change 
+`deleteCount` how many elements are we to delete
+`item1 etc` - items to be added
+
 # Frequently Used Patterns 
 1. **Frequency Counter**
 2. **Multiple Pointers**
