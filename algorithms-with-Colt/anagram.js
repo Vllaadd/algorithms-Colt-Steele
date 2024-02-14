@@ -13,4 +13,4 @@ function validAnag(str1, str2){
 }
 
 
-validAnagram('listen', 'silent');
+validAnag('listen', 'silent');
