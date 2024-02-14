@@ -5,6 +5,14 @@
 4. **Solve or Simplify**
 5. **Look Back and Refactor**
 
+# Frequently Used Patterns 
+1. **Frequency Counter**
+2. **Multiple Pointers**
+3. **Sliding Window**
+4. **Devide and Conquer**
+5. **Dynamic Programming**
+6. ***Greedy Algorithms**
+7. **Backtracking**
 
 # charCount 
 1. **for-loop** 
@@ -22,12 +30,9 @@
 `deleteCount` how many elements are we to delete
 `item1 etc` - items to be added
 
-# Frequently Used Patterns 
-1. **Frequency Counter**
-2. **Multiple Pointers**
-3. **Sliding Window**
-4. **Devide and Conquer**
-5. **Dynamic Programming**
-6. ***Greedy Algorithms**
-7. **Backtracking**
+# Valid Anagram 
+1. **indexOf**
+- the first thing I tried was `two for loops and str1[i] == str2[j]` but in this approach, the moment it finds the fifst pair of characters that are not equal, it returns 'false'. That is not what we were looking for. It should be returning `true` when the characters are in a different order, but still the same. 
+- `indexOf` does just that. It checks if the charachter are in any of the indexes in a certain array. 
+
 
