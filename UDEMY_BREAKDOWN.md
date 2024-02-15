@@ -40,3 +40,8 @@
 3. **ternary operator**
 - `ternary operator` is a concise way to write if-else statement in a signle line, and we use it here to set up the condition when looping through the array
 
+# sumZero
+1. `multiple pointers` is the pattern that we are using here 
+2. it's an easy one, pretty self explenatory 
+
+
