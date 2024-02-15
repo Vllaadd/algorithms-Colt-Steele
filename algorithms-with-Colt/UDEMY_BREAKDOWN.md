@@ -34,5 +34,5 @@
 1. **indexOf**
 - the first thing I tried was `two for loops and str1[i] == str2[j]` but in this approach, the moment it finds the fifst pair of characters that are not equal, it returns 'false'. That is not what we were looking for. It should be returning `true` when the characters are in a different order, but still the same. 
 - `indexOf` does just that. It checks if the charachter are in any of the indexes in a certain array. 
-
+- `ternary operator` is a concise way to write if-else statement in a signle line, and we use it here to set up the condition when looping through the array
 
