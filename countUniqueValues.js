@@ -23,3 +23,5 @@ function countUniqueValues(arr) {
 const sortedArray = [1, 1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 8, 8, 9];
 const result = countUniqueValues(sortedArray);
 console.log(result); // Output: 9
+
+// refactor 
