@@ -45,4 +45,8 @@
 2. it's an easy one, pretty self explenatory 
 
  # maxSubarraySum 
- 
+ 1. `sliding window` is the pattern we use here
+
+ # 
+ 1. `divide and conquer` pattern is used in this challenge. 
+
