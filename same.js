@@ -1,3 +1,7 @@
+// write a function called same, which accepts two arrays. The function 
+//should return true if every value in the array has it's corresponding value 
+//squared in the second array. The frequency of values must be the same 
+
 // naive solution
 function same(arr1, arr2){
     if(arr1.length !== arr2.length){
