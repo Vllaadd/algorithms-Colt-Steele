@@ -1,7 +1,6 @@
-function charCount(str) {
-    //make object to return at end 
+// naive solution
+function charCount(str) { 
     var result = {};
-    //loop over string, for each character
     for (var i = 0; i < str.length; i++) {
         var char = str[i].toLowerCase()
 
@@ -15,7 +14,7 @@ function charCount(str) {
     return result;
 }
 
-//different approach 
+//refactor
 function charCount(str) {
     var obj = {};
     for (var char of str) {
