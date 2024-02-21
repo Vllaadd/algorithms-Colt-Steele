@@ -3,6 +3,7 @@
 // pair where the sum is 0. Return an array that includes both
 // values that sum to zero or undefined if a pair does not exist 
 
+//naive solution 
 function sumZero(arr){
     for(let i=0; i<arr.length; i++){
         for(let j=0; j<arr.length; j++){
