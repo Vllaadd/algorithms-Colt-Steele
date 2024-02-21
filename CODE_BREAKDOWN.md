@@ -59,35 +59,20 @@
 5. Iterate through each character in the second string `second`. If the character is not found in the `loop` object or its count is zero, it's not a valid anagram, so return `false`
 6. if the loops complete successfully, return `true`, indicating that the strings are valid anagrams 
 
-# sumZero
-1. Pattern used: `Multiple pointers`
-2. Initialize  two pointers `left` and `right` at both ends of the array
-3. Continue iterating as long as the `left` pointer is less than the `right` pointer 
-4. Calculate the sum of elements at the current pointers `sum = arr[left] + arr[right]`
-5. Zero sum check: 
-    - if the sum is zero, return the pair of elements that add up to zero 
-    - if the sum is greater than zero, move the `right` pointer to the left 
-    - if the sum is less than zero, move the `left` pointer to the right 
-6. The loop terminates when the `left` pointer is no longer less than the `right` pointer 
-7. If a zero-sum pair is found, it is returned; otherwise, `undefined` is implicitly returned 
-
- # maxSubarraySum 
-1. Pattern used: `Sliding Window`
-2. Naive approach: 
-    - check if `num` is greater than the length of the array. If so, return `null`
-    - initialize `max` to negative infinity 
-    - use nested loops to iterate through subarrays of length `num`
-    - calculate the sum `temp` of each subarray and update `max` if the current sum is greater 
-    - return the maximum sum 
-3. Refactored solution: 
-    - Check if the length of the array is less than num. If so, return null.
-    - Initialize maxSum and tempSum to zero.
-    - Calculate the initial sum of the first num elements and set it to maxSum.
-    - Iterate through the array starting from index num.
-    - Update tempSum by subtracting the first element of the previous subarray and adding the next element.
-    - Update maxSum with the maximum value between the current maxSum and tempSum.
-    -  Continue the iteration.
-    - Return the final maximum sum.   
+# sameFrequency
+1. Pattern used: `Frequency counter`
+2. Initialization:
+    - Convert the numbers to strings (strNum1 and strNum2) for easier digit manipulation.
+    - Check if the lengths of the strings are different; if so, return false.
+    - Initialize frequency counters for each digit in both numbers (frequencyCounter1 and frequencyCounter2).
+3. Counting Frequencies:
+    - Count the frequency of each digit in the first number (num1) and store it in frequencyCounter1.
+    - Count the frequency of each digit in the second number (num2) and store it in frequencyCounter2.
+4. Comparison:
+    - Check if the frequency of each digit is the same in both counters.
+    - If any frequencies differ, return false.
+5. Result:
+    - If all frequencies match, return true, indicating that the two numbers have the same frequency of digits.
 
 # areThereDuplicates
 1. Pattern used: `Frequency counter`
@@ -105,20 +90,6 @@
 6. Result:
     - Return true if there are duplicates (length of duplicates array is greater than 0), otherwise, return false.
 
-# averagePair
-1. Pattern Used: `Multiple Pointers`
-2. Pointer Initialization:
-    - Initialize two pointers (left and right) at both ends of the sorted array.
-3. Iterative Process:
-    - Iterate through the array using multiple pointers while left is less than right.
-    - Calculate the current average of elements at the current pointers.
-    - Check if the current average is equal to the target. If so, return true.
-    - If the current average is less than the target, move the left pointer to the right.
-    - If the current average is greater than the target, move the right pointer to the left.
-4. Termination:
-    - The loop terminates when left is no longer less than right.
-5. Result:
-    - Return false if no pair with the target average is found during the iteratio
 
 # binarySearch
 1. Pattern used: `Divide and conquer`
@@ -134,6 +105,33 @@
 4. Result:
     - The binary search returns the index of the target value if found, or -1 if not found.
     - The naive solution returns the index if the target is found or -1 if not found.
+
+# sumZero
+1. Pattern used: `Multiple pointers`
+2. Initialize  two pointers `left` and `right` at both ends of the array
+3. Continue iterating as long as the `left` pointer is less than the `right` pointer 
+4. Calculate the sum of elements at the current pointers `sum = arr[left] + arr[right]`
+5. Zero sum check: 
+    - if the sum is zero, return the pair of elements that add up to zero 
+    - if the sum is greater than zero, move the `right` pointer to the left 
+    - if the sum is less than zero, move the `left` pointer to the right 
+6. The loop terminates when the `left` pointer is no longer less than the `right` pointer 
+7. If a zero-sum pair is found, it is returned; otherwise, `undefined` is implicitly returned 
+
+# averagePair
+1. Pattern Used: `Multiple Pointers`
+2. Pointer Initialization:
+    - Initialize two pointers (left and right) at both ends of the sorted array.
+3. Iterative Process:
+    - Iterate through the array using multiple pointers while left is less than right.
+    - Calculate the current average of elements at the current pointers.
+    - Check if the current average is equal to the target. If so, return true.
+    - If the current average is less than the target, move the left pointer to the right.
+    - If the current average is greater than the target, move the right pointer to the left.
+4. Termination:
+    - The loop terminates when left is no longer less than right.
+5. Result:
+    - Return false if no pair with the target average is found during the iteratio
 
 # countUniqueValues
 1. Pattern used: `Multiple pointers`
@@ -151,6 +149,24 @@
     - The uniqueCount variable keeps track of the number of unique values.
     - The loop iterates through the array, comparing adjacent elements to identify unique values.
     - The count is incremented whenever a new unique value is encountered.
+
+# maxSubarraySum 
+1. Pattern used: `Sliding Window`
+2. Naive approach: 
+    - check if `num` is greater than the length of the array. If so, return `null`
+    - initialize `max` to negative infinity 
+    - use nested loops to iterate through subarrays of length `num`
+    - calculate the sum `temp` of each subarray and update `max` if the current sum is greater 
+    - return the maximum sum 
+3. Refactored solution: 
+    - Check if the length of the array is less than num. If so, return null.
+    - Initialize maxSum and tempSum to zero.
+    - Calculate the initial sum of the first num elements and set it to maxSum.
+    - Iterate through the array starting from index num.
+    - Update tempSum by subtracting the first element of the previous subarray and adding the next element.
+    - Update maxSum with the maximum value between the current maxSum and tempSum.
+    -  Continue the iteration.
+    - Return the final maximum sum.   
 
 # findLongestSubstring
 1. Pattern used: `Sliding window`
@@ -207,17 +223,3 @@
     - The window adjusts based on the current sum and the target.
     - The minLength is updated whenever a subarray with a sum greater than or equal to the target is found.
 
-# sameFrequency
-1. Pattern used: `Frequency counter`
-2. Initialization:
-    - Convert the numbers to strings (strNum1 and strNum2) for easier digit manipulation.
-    - Check if the lengths of the strings are different; if so, return false.
-    - Initialize frequency counters for each digit in both numbers (frequencyCounter1 and frequencyCounter2).
-3. Counting Frequencies:
-    - Count the frequency of each digit in the first number (num1) and store it in frequencyCounter1.
-    - Count the frequency of each digit in the second number (num2) and store it in frequencyCounter2.
-4. Comparison:
-    - Check if the frequency of each digit is the same in both counters.
-    - If any frequencies differ, return false.
-5. Result:
-    - If all frequencies match, return true, indicating that the two numbers have the same frequency of digits.
