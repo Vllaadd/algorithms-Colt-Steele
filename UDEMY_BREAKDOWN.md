@@ -1,4 +1,4 @@
-# Section 4 - Problem Solving Approach 
+# Section 4 - Problem Solving Steps 
 1. **Understand The Problem** 
 2. **Concrete Examples**
 3. **Break It Down**
@@ -15,28 +15,49 @@
 7. **Backtracking**
 
 # charCount 
-1. `Frequency counter` is the pattern from the 7 most commonly used that we are using with this charCount challenge
-2. **for-loop** 
-- The for loop is a fundamental construct in programming used to iterate over elements in a collection, such as na array or a string. It allows executing a block of code repeatedly until a specified condition is met. 
-- There are different ways to implement a for loop in JavaScript, as demonstrated in the provided code snippet: 
-- **traditional for loop**: 
-`for(var i = 0; i < str.length; i++)` 
-- **for ... of loop**: 
-`for(var char of str)` 
+1. Pattern used: `Frequency counter` 
+2. Naive solution:
+    - initialize an empty object `result` to store the frequency of characters
+    - iterate through each character in the string 
+    - convert the character to lowercase to ensure case-insensitivity 
+    - if the character is already a key in the `result` object, incremenet its count. Otherwise, create a new key and set its count to 1 
+    - return the `result` object with character frequencies
+3. Refactored solution:
+    - code refactored for improved readability and efficiency 
+    - initialize an mepty object `obj` to store the frequency of characters
+    - iterate through each character in the string using a `for ...of` loop 
+    - convert the character to lowercase for case-insensitivity 
+    - check if the character is alphanumeric using a regular expression `/[a-z0-9]`
+    if alphanumeric, use the frequency counter pattern to update the count in the `obj` object 
+    - return the `obj` object with character frequencies 
 
 # Same 
-1. `Frequency pattern` is the one we are using in this challenge 
-2. `indexOf` method is a built-in function in JavaScript used to find the index of the first occurrence of a specified value within an array. It returns the index of the fist matching element in the array, and if the specified value is not found, it returns -1. 
-3.  `array.splice(startIndex, deleteCount, item1, item2 ...);` - splice operation in the loop serves to ensure that each squared element in `arr1` has a corresponding element in `arr2` and that the frequency is the same. If an element in `arr1` is squared and found in `arr2`, it is removed from `arr2` to avoid counting the same element again. This is done to ensure that the frequency of values in `arr2` matches the frequency in `arr1`. 
-4. in refactored solution, we first calculate the frequency counter. 
+1. Pattern used: `Frequency counter` 
+2. Naive solution:
+    - check if the lengths of both arrays are equal. If not, return `false`
+    - iterate through each element in the first array `arr1`
+    - calculate the squared value of the current element 
+    - find the index of the squared value in the second array `arr2` using `indexOf`
+    - if the index is not found `correctIndex === -1`, return `false`
+    - if the index is found, remove that element from `arr2` using `splice`
+    - if the loop completes successfully, return `true`
+3. Refactored solution: 
+    - check if the lengths of both arrays are equal. If not, return `false`
+    - create frequency counters `frequencyCounter1` and `frequencyCounter2` for both arrays
+    - iterate through each element in `arr1` and update its count in `frequencyCounter1`
+    - iterate through each element in `arr2` and update its count in `frequencyCounter2` 
+    log both frequency counters for visualization
+    - check if every value in `arr`` has its corresponding value squaraed in `arr2` with the same frequency using the frequency counters 
+    - return `true` if the condition is met; otherwise, return `false`
+
 
 # Valid Anagram 
-1. The pattern we are using here is `frequency counter`
-2. **indexOf**
-- the first thing I tried was `two for loops and str1[i] == str2[j]` but in this approach, the moment it finds the fifst pair of characters that are not equal, it returns 'false'. That is not what we were looking for. It should be returning `true` when the characters are in a different order, but still the same. 
-- `indexOf` does just that. It checks if the charachter are in any of the indexes in a certain array. 
-3. **ternary operator**
-- `ternary operator` is a concise way to write if-else statement in a signle line, and we use it here to set up the condition when looping through the array
+1. Pattern used: `Frequency Counter`
+2. Check if the lengts of both strings are equal 
+3. Initialize an empty object to store the frequency of characters 
+4. If the letter exists, incremenet its count; otherwise, set it to 1
+5. Iterate through each character in the second string `second`. If the character is not found in the `loop` object or its count is zero, it's not a valid anagram, so return `false`
+6. if the loops complete successfully, return `true`, indicating that the strings are valid anagrams 
 
 # sumZero
 1. `multiple pointers` is the pattern that we are using here 
