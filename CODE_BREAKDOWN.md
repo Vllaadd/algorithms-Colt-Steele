@@ -31,7 +31,7 @@
     if alphanumeric, use the frequency counter pattern to update the count in the `obj` object 
     - return the `obj` object with character frequencies 
 
-# Same 
+# same 
 1. Pattern used: `Frequency counter` 
 2. Naive solution:
     - check if the lengths of both arrays are equal. If not, return `false`
@@ -51,7 +51,7 @@
     - return `true` if the condition is met; otherwise, return `false`
 
 
-# Valid Anagram 
+# anagram 
 1. Pattern used: `Frequency Counter`
 2. Check if the lengts of both strings are equal 
 3. Initialize an empty object to store the frequency of characters 
