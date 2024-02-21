@@ -15,7 +15,7 @@
 7. **Backtracking**
 
 # charCount 
-1. `Frequency pattern` is the pattern from the 7 most commonly used that we are using with this charCount challenge
+1. `Frequency counter` is the pattern from the 7 most commonly used that we are using with this charCount challenge
 2. **for-loop** 
 - The for loop is a fundamental construct in programming used to iterate over elements in a collection, such as na array or a string. It allows executing a block of code repeatedly until a specified condition is met. 
 - There are different ways to implement a for loop in JavaScript, as demonstrated in the provided code snippet: 
@@ -27,11 +27,8 @@
 # Same 
 1. `Frequency pattern` is the one we are using in this challenge 
 2. `indexOf` method is a built-in function in JavaScript used to find the index of the first occurrence of a specified value within an array. It returns the index of the fist matching element in the array, and if the specified value is not found, it returns -1. 
-3. **splice method**
-- `array.splice(startIndex, deleteCount, item1, item2 ...);`
-`startIndex` shows us from what index number we are starting the change 
-`deleteCount` how many elements are we to delete
-`item1 etc` - items to be added
+3.  `array.splice(startIndex, deleteCount, item1, item2 ...);` - splice operation in the loop serves to ensure that each squared element in `arr1` has a corresponding element in `arr2` and that the frequency is the same. If an element in `arr1` is squared and found in `arr2`, it is removed from `arr2` to avoid counting the same element again. This is done to ensure that the frequency of values in `arr2` matches the frequency in `arr1`. 
+4. in refactored solution, we first calculate the frequency counter. 
 
 # Valid Anagram 
 1. The pattern we are using here is `frequency counter`
