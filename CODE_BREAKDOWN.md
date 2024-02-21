@@ -1,4 +1,4 @@
-# Section 4 - Problem Solving Steps 
+# Problem Solving Steps 
 1. **Understand The Problem** 
 2. **Concrete Examples**
 3. **Break It Down**
