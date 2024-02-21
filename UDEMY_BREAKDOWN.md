@@ -26,7 +26,8 @@
 
 # Same 
 1. `Frequency pattern` is the one we are using in this challenge 
-1. **splice method**
+2. `indexOf` method is a built-in function in JavaScript used to find the index of the first occurrence of a specified value within an array. It returns the index of the fist matching element in the array, and if the specified value is not found, it returns -1. 
+3. **splice method**
 - `array.splice(startIndex, deleteCount, item1, item2 ...);`
 `startIndex` shows us from what index number we are starting the change 
 `deleteCount` how many elements are we to delete
