@@ -23,12 +23,12 @@ function search(array, val) {
 }
 
 //naive solution
-//function search(arr, val){
-// for(let i = 0; i < arr.length; i++){
-// if(arr[i]) === val
-// {
-// return if;
-// }
-// }
-// return -1;
-// }
+function search(arr, val){
+for(let i = 0; i < arr.length; i++){
+if(arr[i]) === val
+{
+return if;
+}
+}
+return -1;
+}
