@@ -11,7 +11,7 @@
 3. **Sliding Window**
 4. **Devide and Conquer**
 5. **Dynamic Programming**
-6. ***Greedy Algorithms**
+6. **Greedy Algorithms**
 7. **Backtracking**
 
 # charCount 
@@ -30,6 +30,7 @@
     - check if the character is alphanumeric using a regular expression `/[a-z0-9]`
     if alphanumeric, use the frequency counter pattern to update the count in the `obj` object 
     - return the `obj` object with character frequencies 
+    - both solutions have the same concept, which is that the function uses characters from the input string as keys in the `result` (or `obj`) object, and it increments the corresponding count for each character encountered during the iteration. 
 
 # same 
 1. Pattern used: `Frequency counter` 
@@ -47,14 +48,14 @@
     - iterate through each element in `arr1` and update its count in `frequencyCounter1`
     - iterate through each element in `arr2` and update its count in `frequencyCounter2` 
     log both frequency counters for visualization
-    - check if every value in `arr`` has its corresponding value squaraed in `arr2` with the same frequency using the frequency counters 
+    - check if every value in `arr` has its corresponding value squaraed in `arr2` with the same frequency using the frequency counters 
     - return `true` if the condition is met; otherwise, return `false`
 
 
 # anagram 
 1. Pattern used: `Frequency Counter`
 2. Check if the lengts of both strings are equal 
-3. Initialize an empty object to store the frequency of characters 
+3. Initialize an empty object `lookup` to store the frequency of characters 
 4. If the letter exists, incremenet its count; otherwise, set it to 1
 5. Iterate through each character in the second string `second`. If the character is not found in the `loop` object or its count is zero, it's not a valid anagram, so return `false`
 6. if the loops complete successfully, return `true`, indicating that the strings are valid anagrams 

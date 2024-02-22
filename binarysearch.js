@@ -1,5 +1,6 @@
 //given a sorted array of integers, whire a function called search
-//that accepts a value and returns the index where the value passed to the function is located. if the value is not found, return -1
+//that accepts a value and returns the index where the value 
+//passed to the function is located. if the value is not found, return -1
 
 
 function search(array, val) {
@@ -25,9 +26,9 @@ function search(array, val) {
 //naive solution
 function search(arr, val){
 for(let i = 0; i < arr.length; i++){
-if(arr[i]) === val
+if(arr[i] === val)
 {
-return if;
+return i;
 }
 }
 return -1;
