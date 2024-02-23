@@ -106,6 +106,7 @@
 4. Result:
     - The binary search returns the index of the target value if found, or -1 if not found.
     - The naive solution returns the index if the target is found or -1 if not found.
+    - binary search shines when working with sorted data because it exploits the order to rapidly reduce the search space. For unsorted data, linear serach may be the more appropriate choice. 
 
 # sumZero
 1. Pattern used: `Multiple pointers`

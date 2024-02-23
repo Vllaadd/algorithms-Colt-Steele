@@ -8,8 +8,7 @@ function search(array, val) {
     let max = array.length - 1;
 
     while (min <= max) {
-        let middle = Math.floor(min + max) / 2;
-        let currentElement = array[middle];
+        let middle = Math.floor((min + max) / 2);
 
         if (array[middle] < val) {
             min = middle + 1;
