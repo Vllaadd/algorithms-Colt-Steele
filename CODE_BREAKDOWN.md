@@ -153,6 +153,7 @@
     - The count is incremented whenever a new unique value is encountered.
 
 # maxSubarraySum 
+objective: write a function called maxSubarraySum which  accepts an array of integers and a number called `n`. The function should calculate the maximum sum of `n` consecutive elements in the array. 
 1. Pattern used: `Sliding Window`
 2. Naive approach: 
     - check if `num` is greater than the length of the array. If so, return `null`
