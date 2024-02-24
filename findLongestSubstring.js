@@ -1,4 +1,4 @@
-//write a function called which accepts a string and returns the length of the longest
+//write a function which accepts a string and returns the length of the longest
 //substring with all distinct characters 
 
 function findLongestSubstring(str) {
