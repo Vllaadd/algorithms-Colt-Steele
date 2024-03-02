@@ -226,3 +226,18 @@ objective: write a function called maxSubarraySum which  accepts an array of int
     - The window adjusts based on the current sum and the target.
     - The minLength is updated whenever a subarray with a sum greater than or equal to the target is found.
 
+# recursion 
+Recursion is a process (a function) that calls itself. 
+The following function written without recursion (because it can be done that way in this case):
+`function countDown(num){
+  if(num <= 0){
+    console.log("All done!");
+    return;
+    }
+  console.log(num);
+  num--;
+  countDown(num);
+}
+countDown(5);`
+with recursion:
+``
