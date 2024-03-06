@@ -247,6 +247,21 @@ let result = [];
 }
 collectOddVallues([1,2,3,4,5,6,7,8,9]);`
 
+# slice( ) method 
+Since slice method is used a lot with reprecusion, let's explain it here. 
+The `slice` method in JavaScript can take two aprameters: `start` and `end`. The `slice` method returns a shallow copy of a portion of an array specified by the `start` and `end` parameters. 
+Take a look below to understand what parameters of the slice method mean: 
+`const arr = [1, 2, 3, 4, 5];
+
+// Using slice(3) - extract elements from index 3 to the end
+const result1 = arr.slice(3);
+console.log(result1); // Output: [4, 5]
+
+// Using slice(0, -1) - extract elements from index 0 to before the last element
+const result2 = arr.slice(0, -1);
+console.log(result2); // Output: [1, 2, 3, 4]
+`
+
 # base case example 
 In recursion, a base case is a condition or set of conditions that, when met, stops the recursive calls and starts the process of unwinding the call stack. It serves as the exit condition for the recursive function and prevetns it from calling itself indefinitely. 
 An example of the base case: 
