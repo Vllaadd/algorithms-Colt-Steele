@@ -228,16 +228,31 @@ objective: write a function called maxSubarraySum which  accepts an array of int
 
 # recursion 
 Recursion is a process (a function) that calls itself. 
-The following function written without recursion (because it can be done that way in this case):
-`function countDown(num){
-  if(num <= 0){
-    console.log("All done!");
-    return;
+This is an example where we can have a `helper recursive` function for the functions that are not. 
+`function collectOddVallues(arr){
+  
+let result = [];  
+  function helper(helperInput){
+    if(helperInput.length === 0){
+      return;
     }
-  console.log(num);
-  num--;
-  countDown(num);
+       
+    if(helperInput[0]%2!==0){
+      result.push(helperInput[0])
+    }
+    helper(helperInput.slice(1))
+  }
+  helper(arr)
+  return result; 
 }
-countDown(5);`
-with recursion:
-``
+collectOddVallues([1,2,3,4,5,6,7,8,9]);`
+
+# base case example 
+In recursion, a base case is a condition or set of conditions that, when met, stops the recursive calls and starts the process of unwinding the call stack. It serves as the exit condition for the recursive function and prevetns it from calling itself indefinitely. 
+An example of the base case: 
+`function sumRange(num){
+  if(num === 1)return 1;
+  return num + sumRange(num-1);
+}
+
+sumRange(5);`
