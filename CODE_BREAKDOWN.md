@@ -261,6 +261,7 @@ console.log(result1); // Output: [4, 5]
 const result2 = arr.slice(0, -1);
 console.log(result2); // Output: [1, 2, 3, 4]
 `
+ - the following is used in recursive and in general in algorithms oftgen: `const isOdd = val => val % 2 !== 0;`
 
 # base case example 
 In recursion, a base case is a condition or set of conditions that, when met, stops the recursive calls and starts the process of unwinding the call stack. It serves as the exit condition for the recursive function and prevetns it from calling itself indefinitely. 
